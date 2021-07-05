@@ -67,7 +67,7 @@ namespace WindowsFormsApplication1
                 double x = double.Parse(tbX.Text);
                 double y = double.Parse(tbY.Text);
 
-                if (!(x * x + y * y == 2 * 2) && (y == -x) && (x == -2))
+                if (!(x * x + y * y == 2 * 2) && (y >= -x) && (x <= -2))
                     MessageBox.Show("Точка принадлежит области");
                 else
                     MessageBox.Show("Точка не принадлежит области");
